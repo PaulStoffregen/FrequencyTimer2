@@ -37,6 +37,10 @@
 #elif defined(__AVR_AT90USB646__) || defined(__AVR_AT90USB1286__)
 #define FREQUENCYTIMER2_PIN  24
 
+// Teensy 3.0 & 3.1
+#elif defined(__MK20DX128__) || defined(__MK20DX256__)
+#define FREQUENCYTIMER2_PIN  5
+
 // Sanguino
 #elif defined(__AVR_ATmega644P__) || defined(__AVR_ATmega644__)
 #define FREQUENCYTIMER2_PIN  15

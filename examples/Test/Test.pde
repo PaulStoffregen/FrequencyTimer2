@@ -43,6 +43,10 @@ void loop() {
         Serial.println();
         v = 0;
         break;
+      case 'r':
+        Serial.print("period is ");
+        Serial.println(FrequencyTimer2::getPeriod());
+        break;
       case 'e':
         FrequencyTimer2::enable();
         break;
