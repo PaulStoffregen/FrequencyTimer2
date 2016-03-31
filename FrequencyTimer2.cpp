@@ -348,7 +348,7 @@ void cmt_isr(void)
 {
 	static uint8_t inHandler = 0;
 
-	uint8_t tmp = CMT_MSC;
+	uint8_t __attribute__((unused)) tmp = CMT_MSC;
 	tmp = CMT_CMD2;
 	if ( !inHandler && FrequencyTimer2::onOverflow) {
 		inHandler = 1;
