@@ -37,9 +37,13 @@
 #elif defined(__AVR_AT90USB646__) || defined(__AVR_AT90USB1286__)
 #define FREQUENCYTIMER2_PIN  24
 
-// Teensy 3.0 & 3.1
+// Teensy 3.x
 #elif defined(__MK20DX128__) || defined(__MK20DX256__)  || defined(__MK64FX512__) || defined(__MK66FX1M0__)
 #define FREQUENCYTIMER2_PIN  5
+
+// Teensy LC
+#elif defined(__MKL26Z64__)
+#error "Sorry, FrequencyTimer2 does not work on Teensy LC"
 
 // Sanguino
 #elif defined(__AVR_ATmega644P__) || defined(__AVR_ATmega644__)
