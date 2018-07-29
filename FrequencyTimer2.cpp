@@ -130,7 +130,7 @@ unsigned long  FrequencyTimer2::getPeriod()
     uint8_t p = (TCCR2 & 7);
     unsigned long v = OCR2;
 #endif
-    uint8_t shift;
+    uint8_t shift=0;
   
     switch(p) {
       case 0 ... 1:
