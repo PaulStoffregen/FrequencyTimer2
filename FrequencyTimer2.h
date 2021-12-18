@@ -45,6 +45,10 @@
 #elif defined(__MKL26Z64__)
 #error "Sorry, FrequencyTimer2 does not work on Teensy LC"
 
+// Teensy 4.0, 4.1, MicroMod
+#elif defined(__IMXRT1062__)
+#error "Sorry, FrequencyTimer2 does not work on Teensy 4.0, 4.1, MicroMod"
+
 // Sanguino
 #elif defined(__AVR_ATmega644P__) || defined(__AVR_ATmega644__)
 #define FREQUENCYTIMER2_PIN  15
