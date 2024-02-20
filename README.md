@@ -1,4 +1,4 @@
-#FrequencyTimer2 Library#
+#FrequencyTimer2 Library
 
 Create a zero jitter frequency output, and run your own function on each period.
 
